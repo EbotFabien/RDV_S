@@ -9,12 +9,12 @@ from app.config import Config
 import os
 from firebase_admin import credentials, firestore, initialize_app
 from flask_cors import CORS
-# Initialize Flask App
+# Initialize Flask App  C:\new services\RDV_S\project\app\key.json
 
 
 
 
-cred = credentials.Certificate('C:/Logement_app/project/app/key.json')
+cred = credentials.Certificate('C:/RDV_S/project/app/key.json')
 default_app = initialize_app(cred)
 db = firestore.client()
 bcrypt = Bcrypt()
